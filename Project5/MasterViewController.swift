@@ -99,6 +99,10 @@ class MasterViewController: UITableViewController {
                     let indexPath = NSIndexPath(forRow: 0, inSection: 0)
                     tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
                     
+                    let ac = UIAlertController(title: "Correct", message: "May be more ans are possible", preferredStyle: .Alert)
+                    ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+                    presentViewController(ac, animated: true, completion: nil)
+                    
                     return
                 }
                 else {
